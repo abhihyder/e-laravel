@@ -12,6 +12,7 @@ This is an Ecommerce project using Laravel 5.8
 
 ## Package Used
 - laravel debugber
+- laravel medialibrarey for manage product image
 
 ## Learning Laravel
 
