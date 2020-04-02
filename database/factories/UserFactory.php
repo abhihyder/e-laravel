@@ -3,10 +3,15 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Model;
+use Illuminate\Support\Carbon;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(App\Models\User::class, function (Faker $faker) {
     return [
-        //
+        'name' => $faker->name('male'),
+        'email' => $faker->email,
+        'phone_number' => $faker->phoneNumber,
+        'password' => bcrypt('123456'),
+        'email_verified_at' => now(),
     ];
 });
