@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
-    public function productDetails()
+    public function productDetails($slug)
     {
-       
+        $data['product']= Product::where('slug', $slug)->first();
+       return view('frontend.products.details', $data);
     }
 }

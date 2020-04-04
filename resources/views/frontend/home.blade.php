@@ -12,7 +12,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <a href="{{route('product.details', $product->slug)}}">
-                  <img class="card-img-top" src="{{ $product->getFirstMediaUrl('products') }}" alt="{{$product->title}}">
+                  <img class="card-img-top" src="" alt="{{$product->title}}">
                 </a>
                
                 <div class="card-body">
